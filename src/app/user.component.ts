@@ -4,7 +4,8 @@ import { Component } from '@angular/core'
   selector: 'app-user',
   template: `
     <p>Hello</p>
-    <p>I am the user component</p>
+    <p>I'm the user component</p>
   `
 })
+
 export class UserComponent { }
