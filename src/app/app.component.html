@@ -4,3 +4,4 @@
 <p>Some text</p>
 <app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
 <app-dashboard></app-dashboard>
+<app-cart [items]="rootItems" (itemAdded)="onItemWasAdded($event)"></app-cart>
