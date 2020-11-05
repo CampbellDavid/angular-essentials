@@ -2,5 +2,5 @@
   <h1>Welcome to {{ title }}!!</h1>
 </div>
 <p>Some text</p>
-<app-user></app-user>
+<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
 <app-dashboard></app-dashboard>
