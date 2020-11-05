@@ -1,3 +1,4 @@
 <p>Dashboard woop</p>
-<p>{{ loadState }}</p>
+<!-- <p>{{ loadState }}</p> -->
+<p [textContent]="loadState"></p>
 <button (click)="onSwitchState()">Switch state</button>
