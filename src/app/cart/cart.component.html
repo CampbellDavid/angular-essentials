@@ -8,7 +8,11 @@
 </button>
 <hr />
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let item of items">
+  <li
+    class="list-group-item"
+    *ngFor="let item of items; let i = index"
+    [ngStyle]="{ 'background-color': i % 2 === 0 ? '#FF1122' : '#33DA11' }"
+  >
     {{ item }}
   </li>
 </ul>
